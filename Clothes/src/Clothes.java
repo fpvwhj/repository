@@ -1,9 +1,10 @@
-package Clothes;
+package Clothes.src;
 
 public class Clothes{
 
 	private String size;
 	private String color;
+	private int prize;
 
 	public Clothes(){}
 	
@@ -17,7 +18,10 @@ public class Clothes{
 		setColor(color);
 	}
 	
-	
+	public Clothes(String size,String color,int prize){
+		this(size,color);
+		setPrize(prize);
+	}
 	public String getSize(){
 		return this.size;
 	}
@@ -38,7 +42,7 @@ public class Clothes{
 		return this.prize;
 	}
 	
-	public void setPrize(prize){
+	public void setPrize(int prize){
 		this.prize = prize;
 	}
 }
